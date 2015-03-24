@@ -8,15 +8,15 @@ This engine is made for fun, you can do whatever you want with it.
 
     templite(id)
 
-id:template id in document
+    id:template id in document
 
-return: render function 
+    return: render function 
 
     render(data)
 
-data: json data 
+    data: json data 
 
-return: html string
+    return: html string
 
 
 # To do 
