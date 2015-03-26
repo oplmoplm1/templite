@@ -21,7 +21,7 @@ This engine is made for fun, you can do whatever you want with it.
 
 # To do 
 
-1.if statements
+1.if statements // done
 
 2.filter
 

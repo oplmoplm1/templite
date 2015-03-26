@@ -32,7 +32,11 @@ var templite = function (id,data){
 		var shuzu = str.trim().split(" ");
 		var first = shuzu.shift();
 		var _rs = "";
-		if(first=="for"){
+		if(first=="if"){
+			var statements = shuzu.join(" ");
+			_rs += "if("+statements+"){\n";
+			
+		}else if(first=="for"){
 			/** to do: validation and index iterator */
 			var _bianliang = shuzu[0];
 			var _shuju = shuzu[2];
@@ -40,7 +44,7 @@ var templite = function (id,data){
 				"var "+_bianliang+" = _data['"+_shuju+"'][i];\n \
 				console.log(wenzhang);\n";
 			for_flag=true;
-		}else if(first=="endfor"){
+		}else if(first=="end"){
 			_rs += "}\n";
 			for_flag=false;
 		}else{
